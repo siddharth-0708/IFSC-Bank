@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src=index.js></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Bank Detail by IFSC Code</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1 style="color: blue;">Bank details by IFSC code</h1>
+        <div id="form-id">
+            <form id="ifsc-form">
+                <p class="labelText">
+                    <h4>Enter the IFSC Code</h4>
+                </p>
+                <input type="text" placeholder="E.g: HDFC0000001" id="ifsc">
+            </form>
+        </div>
+        <button id="form-button" onclick="getBankDetails(ifsc.value)"><b>Get Details</b></button>
+        <br /><br /><br />
+        <div><span style="color: red;font-weight: bold;" id="invalidCode"></span></div>
+
+        <h2>Bank Details</h2>
+        <table align="center">
+            <tr>
+                <td><b>Bank Name</b></td>
+                <td><span id="bankName"></span></td>
+            </tr>
+            <tr>
+                <td><b>Branch Name</b></td>
+                <td><span id="branchName"></span></td>
+            </tr>
+            <tr>
+                <td><b>Address</b></td>
+                <td><span id="address"></span></td>
+            </tr>
+            <tr>
+                <td><b>City</b></td>
+                <td><span id="city"></span></td>
+            </tr>
+            <tr>
+                <td><b>State</b></td>
+                <td><span id="state"></span></td>
+            </tr>
+            <tr>
+                <td><b>MICR</b></td>
+                <td><span id="micr"></span></td>
+            </tr>
+            <tr>
+                <td><b>Contact Number</b></td>
+                <td><span id="contact"></span><button id="contactButton" onclick="getContactNumber()">Show Phone
+                        No.</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

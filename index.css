@@ -1,0 +1,24 @@
+#container {
+  text-align: center;
+  padding-top: 2%;
+}
+
+#form-button {
+  background: lightblue;
+  padding: 10px 20px;
+  border: 0ch;
+  margin-top: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 55%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: left;
+}
